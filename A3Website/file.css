@@ -10,9 +10,11 @@
 }
 body {
   background-color:#ECE2D7;
+  margin: 0;
 }
 
-/* Navigation Bar */
+/* Navigation Bar Side-Bar */
+/*
 nav {
   display: flex;
   justify-content: left;
@@ -35,22 +37,49 @@ nav {
   margin-left: -80%;
 } */
 
+/* Nav Horizontal */
+.logo {
+  display:flex;
+  justify-content:left;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#7C8C68;
+  color:#ECE2D7;
+}
 li {
   list-style-type:none;
   position: center;
   font-size:larger;
   padding-left: 5%;
     line-height: 400%;
-}
-
-a {
- color:bisque; 
+     color:bisque; 
  font-family: 'Marcellus';
  text-decoration:none;
 }
 
 a:hover {
   text-decoration:underline;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color:#501313;
 }
 
 /* Homepage Display */ 
@@ -79,6 +108,15 @@ a:hover {
   justify-content: left;
 }
 
+.findcategory {
+  background-color:#501313;
+  color:#ECE2D7;
+  padding:10px;
+  margin-bottom:20px;
+  margin-top: 20px;
+  opacity:80%;
+}
+
 /* add code to apply new font. Test successful */
 .storetitle {
     font-family: 'OrelegaOne';
@@ -102,7 +140,6 @@ a:hover {
 }
 
 
-
 .price {
   color: bisque;
   font-size: 22px;
@@ -120,6 +157,15 @@ button {
   font-family: 'OrelegaOne';
 }
 
+#recommended {
+  color:#501313;
+}
+
+.news {
+  background-color:aqua;
+  align-items:center;
+}
+
 /* Product Catalog Title Card */
 .productcatalog {
   background-color:#D9B382;
@@ -135,4 +181,13 @@ button {
 .pc_title {
   text-align: center;
   font-family: 'OrelegaOne';
+}
+
+ #recommended {
+text-align: center;
+}
+
+h2 {
+  font-family: 'OrelegaOne';
+  font-size:300%;
 }
