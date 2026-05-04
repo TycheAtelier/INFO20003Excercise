@@ -1,3 +1,13 @@
+/* Hopefully adds font to the website that is not registered with basic VS code */
+@font-face {
+    font-family:'OrelegaOne'; /*sets the name for font*/
+    src: url(OrelegaOne-Regular.ttf); /* should connect to font file */
+} 
+
+@font-face {
+  font-family:'Marcellus';
+  src: url(Marcellus-Regular.ttf);
+}
 body {
   background-color:#ECE2D7;
 }
@@ -7,17 +17,50 @@ nav {
   display: flex;
   justify-content: left;
   background-color:#7C8C68;
-  color:bisque;
-  height:100%;
+  color:#ECE2D7;
+  height:110%;
   width: 20%;
+  margin-top: -1%;
+  padding-top: 2%;
+  position: fixed;
+  z-index:10;
+}
+
+/* issue -> blocks the nav buttons when aligned left
+.ad_contact {
+  color:blue;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: -80%;
+} */
+
+li {
+  list-style-type:none;
+  position: center;
+  font-size:larger;
+  padding-left: 5%;
+    line-height: 400%;
+}
+
+a {
+ color:bisque; 
+ font-family: 'Marcellus';
+ text-decoration:none;
+}
+
+a:hover {
+  text-decoration:underline;
 }
 
 /* Homepage Display */ 
 
-.container {
+.banner {
   position: relative;
   text-align: center;
   color:bisque;
+  border-bottom-style: double;
+  border-color:#7C8C68;
 }
 
 .centered {
@@ -25,13 +68,16 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: #501313;
+  padding: 30px;
+  border-radius: 50px;
+  opacity:80%;
 }
 
-/* Hopefully adds font to the website that is not registered with basic VS code */
-@font-face {
-    font-family:'OrelegaOne'; /*sets the name for font*/
-    src: url(OrelegaOne-Regular.ttf); /* should connect to font file */
-} 
+#aboutsection {
+  color:#ECE2D7;
+  justify-content: left;
+}
 
 /* add code to apply new font. Test successful */
 .storetitle {
