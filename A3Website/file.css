@@ -109,6 +109,7 @@ ul li a:hover {
 
 #aboutsection {
   color:#ECE2D7;
+  display: flex;
   justify-content: left;
 }
 
@@ -250,8 +251,8 @@ h2 {
 }
 
 .arrowbuttons {
+  display:flex;
   justify-content: center;
-  padding-left: 50%;
   padding-top: 5%;
 }
 
