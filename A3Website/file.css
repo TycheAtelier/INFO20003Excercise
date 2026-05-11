@@ -316,6 +316,8 @@ footer {
   border-bottom-style: double;
   margin:5%;
   display:flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #cart {
@@ -325,4 +327,7 @@ footer {
 
 .addremove {
   margin-left:10%;
+    button {
+      padding:10px;
+    }
 } 
