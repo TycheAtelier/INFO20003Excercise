@@ -93,6 +93,7 @@ ul li a:hover {
   text-align: center;
   color:bisque;
   border-bottom-style: double;
+  border-bottom-width: 10px;
   border-color:#7C8C68;
 }
 
@@ -204,7 +205,7 @@ p.news {
 }
 
 /* Product Catalog Title Card */
-.productcatalog {
+.headingbanner {
   background-color:#D9B382;
   opacity:0.8;
   padding-top: 60px;
@@ -314,6 +315,7 @@ footer {
 .cartitem {
   border-bottom: #7C8C68;
   border-bottom-style: double;
+  padding: 3%;
   margin:5%;
   display:flex;
   justify-content: space-between;
@@ -331,3 +333,9 @@ footer {
       padding:10px;
     }
 } 
+
+#checkoutbutton {
+  display: flex;
+  align-items: center;
+  margin:5%;
+}
