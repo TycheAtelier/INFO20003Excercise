@@ -54,13 +54,15 @@ ul {
   overflow: hidden;
   background-color:#7C8C68;
   color:#ECE2D7;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 li {
   list-style-type:none;
   position: center;
   font-size:larger;
-  padding-left: 5%;
-    line-height: 400%;
+   line-height: 400%;
      color:bisque; 
  font-family: 'Marcellus';
  text-decoration:none;
@@ -334,8 +336,9 @@ footer {
     }
 } 
 
-#checkoutbutton {
-  display: flex;
-  align-items: center;
+.checkoutbutton {
   margin:5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
