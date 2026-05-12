@@ -91,7 +91,7 @@ ul li a:hover {
 /* Homepage Display */ 
 
 .banner {
-  position: relative;
+  position:relative;
   text-align: center;
   color:bisque;
   border-bottom-style: double;
@@ -100,7 +100,7 @@ ul li a:hover {
 }
 
 .centered {
-  position: absolute;
+  position:absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -136,7 +136,7 @@ ul li a:hover {
 .storetitle {
     font-family: 'OrelegaOne';
     -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: orange;
+    -webkit-text-stroke-color:#D9B382;
     color:transparent;
     font-size: 350%;
 }
@@ -145,17 +145,32 @@ ul li a:hover {
 
 .productlisting {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  max-width: 200px;
+  max-height: 300px;
   margin: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color:#7C8C68;
   color:bisque;
   border-radius: 25px;      /* Border-Radius for rounded corners. */  
   margin-top:5%;
-  
+    h1{
+      font-size:120%;
+    }
+    p {
+      font-size:80%;
+    }
+    img {
+      border-radius: 20%;
+    }
+}
+
+.linktoproductpage {
+ display:flex;
+ justify-content: space-around;
+ margin:1%;
 }
 
 /* div.productlisting {
@@ -267,6 +282,11 @@ footer {
   padding-bottom:2%;
   padding-left:5%;
   margin-top:5%;
+    p,h3 {
+      display: flex;
+      justify-content: left;
+      text-align: left;
+    }
 }
 
 #searchbar {
@@ -341,4 +361,57 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Check Out */
+
+#checkoutheader {
+  display:flex;
+  justify-content: left;
+  background-color:#7C8C68;
+  border-radius: 80px;
+  margin:3%;
+  text-align: center;
+}
+
+
+.checkout_title {
+  color:#ECE2D7;
+  font-family: 'OrelegaOne';
+  text-align:center;
+  padding:5%;
+}
+
+.checkoutcardform {
+  margin:5%;
+  margin-top: 2%;
+  border-radius: 50px;
+  padding: 3%;
+}
+
+#checkoutcard {
+  background-color: #D9B382;
+  border-bottom-color:#ECE2D7;
+  border-bottom-style: dashed;
+  border-width: 5px;
+  padding: 3%;
+}
+
+#checkoutinfo {
+  background-color: #D9B382;
+  padding: 3%;
+}
+
+#purchasebutton {
+  background-color: #7C8C68;
+  padding: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 150%;
+  font-family: 'OrelegaOne';
+  border-radius: 50px;
+  color:#ECE2D7;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
