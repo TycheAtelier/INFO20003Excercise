@@ -108,6 +108,7 @@ ul li a:hover {
   padding: 30px;
   border-radius: 50px;
   opacity:80%;
+  overflow:hidden;
 }
 
 #aboutsection {
