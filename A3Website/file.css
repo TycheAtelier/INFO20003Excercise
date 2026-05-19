@@ -1,3 +1,5 @@
+/* Universal Elements */
+
 /* Hopefully adds font to the website that is not registered with basic VS code */
 @font-face {
     font-family:'OrelegaOne'; /*sets the name for font*/
@@ -8,6 +10,10 @@
   font-family:'Marcellus';
   src: url(Marcellus-Regular.ttf);
 }
+
+
+/* Desktop Screen */
+
 body {
   background-color:#ECE2D7;
   margin: 0;
@@ -16,6 +22,63 @@ body {
 a {
   text-decoration: none;
 }
+
+@media screen and (max-width:1440px) {
+  /* Homepage Display */ 
+
+.banner {
+  position:relative;
+  text-align: center;
+  color:bisque;
+  border-bottom-style: double;
+  border-bottom-width: 10px;
+  border-color:#7C8C68;
+}
+
+.centered {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #501313;
+  padding: 30px;
+  border-radius: 50px;
+  opacity:80%;
+  overflow:hidden;
+}
+
+/* add code to apply new font. Test successful */
+.storetitle {
+    font-family: 'OrelegaOne';
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color:#D9B382;
+    color:transparent;
+    font-size: 350%;
+}
+
+#aboutsection {
+  color:#ECE2D7;
+  display: flex;
+  justify-content: left;
+}
+
+.findcategory {
+  background-color:#501313;
+  color:#ECE2D7;
+  padding:10px;
+  margin-bottom:20px;
+  margin-top: 20px;
+  opacity:80%;
+}
+
+.horizontal {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: end;
+}
+}
+
 
 /* Navigation Bar Side-Bar */
 /*
@@ -42,6 +105,7 @@ nav {
 } */
 
 /* Nav Horizontal */
+
 .logo {
   display:flex;
   justify-content:left;
@@ -51,13 +115,14 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow:hidden;
   background-color:#7C8C68;
   color:#ECE2D7;
   display:flex;
   justify-content: space-evenly;
   align-items: center;
 }
+
 li {
   list-style-type:none;
   position: center;
@@ -86,60 +151,6 @@ ul li a {
 
 ul li a:hover {
   background-color:#501313;
-}
-
-/* Homepage Display */ 
-
-.banner {
-  position:relative;
-  text-align: center;
-  color:bisque;
-  border-bottom-style: double;
-  border-bottom-width: 10px;
-  border-color:#7C8C68;
-}
-
-.centered {
-  position:absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #501313;
-  padding: 30px;
-  border-radius: 50px;
-  opacity:80%;
-  overflow:hidden;
-}
-
-#aboutsection {
-  color:#ECE2D7;
-  display: flex;
-  justify-content: left;
-}
-
-.findcategory {
-  background-color:#501313;
-  color:#ECE2D7;
-  padding:10px;
-  margin-bottom:20px;
-  margin-top: 20px;
-  opacity:80%;
-}
-
-.horizontal {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: end;
-}
-
-/* add code to apply new font. Test successful */
-.storetitle {
-    font-family: 'OrelegaOne';
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color:#D9B382;
-    color:transparent;
-    font-size: 350%;
 }
 
 /* Product Catalog Page -> Product Listings */
@@ -415,4 +426,55 @@ footer {
   display:flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width:391px){
+  /* Home Page */
+  .banner {
+  position:relative;
+  height: 40em;
+  text-align: center;
+  color:bisque;
+  border-bottom-style: double;
+  border-bottom-width: 10px;
+  border-color:#7C8C68;
+}
+ 
+.banner img {
+  height: 40em;
+  width: 100em;
+}
+  
+.centered {
+     position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #501313;
+  padding: 2rem;
+  border-radius: 5rem;
+  opacity:80%;
+  overflow:hidden;
+  }
+  .navigation ul: {
+
+ }
+  .navigation ul li {
+    width:100%;
+  }
+  .navigation a {
+    size:10em;
+  }
+
+  .navigation a:hover {
+    background-color: #501313;
+  }
+
+  .horizontal {
+    position:relative;
+    overflow:auto;
+  }
+
+  /* Product Page  */
+
 }
