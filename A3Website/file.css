@@ -10,10 +10,6 @@
   font-family:'Marcellus';
   src: url(Marcellus-Regular.ttf);
 }
-
-
-/* Desktop Screen */
-
 body {
   background-color:#ECE2D7;
   margin: 0;
@@ -23,8 +19,15 @@ a {
   text-decoration: none;
 }
 
+
+/* Desktop Screen */
+
 @media screen and (max-width:1440px) {
   /* Homepage Display */ 
+
+  .mobilenavigation {
+    display: none;
+  }
 
 .banner {
   position:relative;
@@ -391,6 +394,7 @@ footer {
   color:#ECE2D7;
   font-family: 'OrelegaOne';
   text-align:center;
+  align-items: center;
   padding:5%;
 }
 
@@ -426,8 +430,11 @@ footer {
   display:flex;
   align-items: center;
   justify-content: center;
+  margin-top: 2rem;
 }
 
+
+/* Mobile Screen Size Responsiveness */
 @media screen and (max-width:391px){
   /* Home Page */
   .banner {
@@ -456,25 +463,31 @@ footer {
   opacity:80%;
   overflow:hidden;
   }
-  .navigation ul: {
 
- }
-  .navigation ul li {
-    width:100%;
-  }
-  .navigation a {
-    size:10em;
+  /* Navigation */ 
+
+  .navigation {
+    display:none;
   }
 
-  .navigation a:hover {
-    background-color: #501313;
+  .mobilenavigation {
+    display:flex;
   }
 
+  /* Horizontal Scroll - How to Overflow?? */ 
   .horizontal {
     position:relative;
     overflow:auto;
   }
 
+  /* Search Page */ 
+  section.headingbanner {
+    margin:3rem;
+  }
+
   /* Product Page  */
+
+  
+
 
 }
