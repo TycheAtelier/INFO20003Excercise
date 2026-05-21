@@ -266,28 +266,22 @@ h2 {
 }
 
 /* Arrow Buttons */
-.arrow {
-  border:solid #ECE2D7;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 5px;
-}
-
-.right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
-.left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
-
 .arrowbuttons {
   display:flex;
   justify-content: center;
-  padding-top: 5%;
+  padding: 5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color:#D9B382;
+  margin: 2%;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
 }
+
+.arrowbuttons span {
+  margin: 0 1rem 0 1rem;
+}
+
+
 
 /* footer */
 footer {
@@ -364,28 +358,38 @@ footer {
   border-radius:30px;
 } 
 
-.addremove {
+.btn-danger {
   margin-left:10%;
-    button {
-      padding:10px;
-    }
 } 
+
+.remove {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
 
 .checkoutbutton {
   margin:5%;
+  transform: scale(2);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.checkoutbutton button {
+  padding-left: 3rem;
+  padding-right:3rem;
+  background-color: #7C8C68;
+  cursor:pointer;
+}
+
 /* Check Out */
 
 #checkoutheader {
-  display:flex;
-  justify-content: left;
   background-color:#7C8C68;
   border-radius: 80px;
   margin:3%;
+}
+
+#checkoutheader h1 {
   text-align: center;
 }
 
@@ -515,18 +519,19 @@ display:flex;
 
   /* Navigation */ 
 
-  .navigation {
-    display:none;
+  .navigation img {
+    transform: scale(0.5);
+    max-width: 100vw;
   }
 
-  .mobilenavigation {
-    display:flex;
-  }
 
   /* Horizontal Scroll - How to Overflow?? fail */ 
   .horizontal {
+    max-width: 390px;
     position:relative;
     overflow:auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
   }
 
   /* Search Page */ 
@@ -536,26 +541,29 @@ display:flex;
 
   /* Product Page  */
 
+  /* Product Listing */ 
+  .listProduct {
+ transform: scale(0.8);
+ align-content: start;
+}
+
 }
 
 /* Product Listing Page */
 
 .listProduct .item img {
   width:100%;
+  filter:drop-shadow(10px 10px 5px #1f1a1a)
 }
 
-.listProduct {
-  display:grid; 
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-    h2 {
+.listProduct h2 {
       font-size:large;
       color:#ECE2D7;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-weight:normal;
       letter-spacing: 2px;
     }
-}
+
 
 .price {
   color:#ECE2D7;
@@ -565,14 +573,12 @@ display:flex;
 
 .listProduct .item {
   background-color: #7C8C68;
-  padding: 2rem;
+  padding: 2rem 4rem 2rem 4rem;
   border-radius:20%;
-  margin: 3rem;
-}
-
-.listProduct .item {
+  margin: 1rem;
   text-align:center;
   line-height: 0.5rem;
+  transform: scale(0.8)
 }
 
 .addCart {

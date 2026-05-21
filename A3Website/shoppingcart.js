@@ -13,13 +13,72 @@ closeCart.addEventListener("click", () => {
    body.classList.remove('showCart')
 })
 
-const initApp = () => {
-//take data from JSON file
-   fetch('products.json')
-   then(response => response.json)
-   then(data => {})
-      listProducts = data;
-      console.log(listProducts);
-}
+let products = [
+    {
+        "id": 1,
+        "itemName": "ACID NEUTRAL PVA",
+        "itemPrices": 10,
+        "image": "adhesiveproduct1.png"
+    },
 
-initApp
+    {
+        "id": 2,
+        "itemName": "PEARL ANIMAL GLUE",
+        "itemPrices": 10,
+        "image": "adhesiveproduct2.png"
+    },
+
+
+
+    {
+        "id": 3,
+        "itemName": "PHOTO CORNERS",
+        "itemPrices": 10,
+        "image": "adhesiveproduct3.png"
+    },
+
+
+
+    {
+        "id": 4,
+        "itemName": "BUCKRAM",
+        "itemPrices": 10,
+        "image": "buckram.png"
+    },
+
+
+
+    {
+        "id": 5,
+        "itemName": "AKA PAD",
+        "itemPrices": 10,
+        "image": "akapad.png"
+    },
+
+
+
+    {
+        "id": 6,
+        "itemName": "AKA PAD - WHITE",
+        "itemPrices": 10,
+        "image": "akapad2.png"
+    },
+
+
+
+    {
+        "id": 7,
+        "itemName": "DOCUMENT CLEANING PAD",
+        "itemPrices": 10,
+        "image": "cleaningpad1.png"
+    },
+
+
+
+    {
+        "id": 8,
+        "itemName": "GOAT HAIR HAKE BRUSH",
+        "itemPrices": 10,
+        "image": "brush1.png"
+    }
+]
