@@ -86,8 +86,9 @@ nav.carticon {
 
 
 /* Navigation Bar Side-Bar */
+
 /*
-nav {
+#Sidebar {
   display: flex;
   justify-content: left;
   background-color:#7C8C68;
@@ -98,16 +99,19 @@ nav {
   padding-top: 2%;
   position: fixed;
   z-index:10;
+    ul {
+      text-decoration: none;
+      font-family: 'OrelegaOne';
+      color:#ECE2D7;
+      list-style-type: none;
+      letter-spacing: 5px;
+      line-height: 50px;
+      inset: 50px;
+    }
+    a {
+      color:#ECE2D7;
+    }
 }
-
-/* issue -> blocks the nav buttons when aligned left
-.ad_contact {
-  color:blue;
-  display:flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-left: -80%;
-} */
 
 /* Nav Horizontal */
 
