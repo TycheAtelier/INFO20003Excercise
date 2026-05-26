@@ -23,14 +23,27 @@ nav.carticon {
   display:flex;
 }
 
+main {
+  min-height: 115vw;
+}
+
+
+@media screen and (min-width:391px) {
+  .mobilenavigation {
+    display: none;
+  }
+}
+
+.catalogDisplay {
+  display: grid; 
+  grid-template-columns: repeat(5, 1fr);
+}
+
 /* Desktop Screen */
 
 @media screen and (max-width:1440px) {
   /* Homepage Display */ 
 
-  .mobilenavigation {
-    display: none;
-  }
 
 .banner {
   position:relative;
@@ -172,7 +185,7 @@ ul li a:hover {
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   background-color:#7C8C68;
   color:bisque;
   border-radius: 25px;      /* Border-Radius for rounded corners. */  
@@ -188,10 +201,19 @@ ul li a:hover {
     }
 }
 
+.catalogButtons {
+  margin-left: 1rem;
+}
+
+.filterMaterials {
+  background-color: #7C8C68;
+  border-color: #525e42;
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .linktoproductpage {
  margin: 1%;
 }
-
 /* div.productlisting {
 display:flex;
   flex-direction: row;
@@ -233,7 +255,7 @@ article.news {
 }
 
 p.news {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size:larger;
   background-color: #ECE2D7;
   text-align: center;
@@ -274,7 +296,7 @@ h2 {
   display:flex;
   justify-content: center;
   padding: 5%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   background-color:#D9B382;
   margin: 2%;
   border-bottom-left-radius: 80px;
@@ -335,7 +357,7 @@ footer {
 .productdescription {
   order:2;
   color:#501313;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   line-height: 150%;
   text-indent:3%;
   text-align: center;
@@ -433,7 +455,7 @@ footer {
   background-color: #501313;
   padding: 0.5rem;
   border-radius:100%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* requires adjustment in final design for cleanness. remove underline on hover*/
@@ -486,7 +508,7 @@ display:flex;
     }
     p {
       color:#ECE2D7;
-      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-family:'Times New Roman', Times, serif;
     }
 }
 
@@ -559,14 +581,6 @@ border-bottom-style: double;
     margin: 1rem;
   }
 
-  .openTab img {
-    width: 30px;
-    margin-top: 3rem;
-    background-color: #501313;
-    border-radius: 100px;
-    padding: 5px;
-  }
-
   .linktoPages img {
     width:30px;
     margin-top: 3rem;
@@ -611,6 +625,12 @@ border-bottom-style: double;
   .listProduct {
  transform: scale(0.8);
  align-content: start;
+ margin: 0;
+}
+
+.catalogDisplay {
+  display: flex; 
+  flex-direction: column;
 }
 
 }
@@ -625,7 +645,7 @@ border-bottom-style: double;
 .listProduct h2 {
       font-size:large;
       color:#ECE2D7;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-family: 'Times New Roman', Times, serif;
       font-weight:normal;
       letter-spacing: 2px;
     }
@@ -633,7 +653,7 @@ border-bottom-style: double;
 
 .price {
   color:#ECE2D7;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:'Times New Roman', Times, serif;
   font-size:small;
 }
 
@@ -705,7 +725,7 @@ body.showCart .cartTab {
   gap:10px;
   text-align: center;
   align-items: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .cartTab .listCart .item .name {
