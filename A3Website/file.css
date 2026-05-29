@@ -620,6 +620,46 @@ border-bottom-style: double;
   }
 
   /* Product Page  */
+  .productinfo {
+    display: none;
+  }
+
+  .mobileProductInfo {
+    background-color: #501313;
+    margin: 5%;
+    margin-top: 10%;
+    padding: 5%;
+    border-radius: 50px;
+    height: 39rem;
+  }
+
+  .mobileItemInfo {
+    background: linear-gradient(to bottom, #ECE2D7 90%, #C5A687);
+    padding: 10%;
+    border-radius: 50px 50px 0px 0px;
+    display:flex;
+    align-items: center;
+    height: 15rem;
+      h3 {
+        font-family: 'OrelegaOne';
+        color:#501313;
+        font-weight: 100;
+      }
+  }
+
+
+  .mobileItemDescription {
+    background: linear-gradient(to top, #ECE2D7 90%, #C5A687);
+    padding: 10%;
+     border-radius: 0 0 50px 50px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     button {
+      background-color:#7C8C68;
+      font-size: 20px;
+     }
+  }
 
   /* Product Listing */ 
   .listProduct {
@@ -631,6 +671,10 @@ border-bottom-style: double;
 .catalogDisplay {
   display: flex; 
   flex-direction: column;
+}
+
+search.search {
+  margin: 5%;
 }
 
 }
