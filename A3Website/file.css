@@ -451,11 +451,22 @@ footer {
   line-height: 2rem;
 }
 
+.carticon {
+   position: relative;
+}
+
 #purchasequantity {
   background-color: #501313;
-  padding: 0.5rem;
-  border-radius:100%;
+  padding: 5px 10px 5px 10px;
+  border-radius: 50px;
   font-family: 'Times New Roman', Times, serif;
+  position: absolute;
+  height: 20px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  right: -10px;
 }
 
 /* requires adjustment in final design for cleanness. remove underline on hover*/
@@ -675,6 +686,83 @@ border-bottom-style: double;
 
 search.search {
   margin: 5%;
+}
+
+/* Shopping Cart */
+#purchasequantity {
+  text-decoration: none;
+  color:#ECE2D7;
+  right: 0px;
+  top: 65%;
+  height: 15px;
+}
+
+/* Check Out */ 
+#checkoutheader {
+  margin-bottom: -50px;
+  position:relative;
+  width: 15rem;
+  left: 15%;
+}
+
+.checkout_title {
+  font-weight:100;
+}
+
+#purchasebutton {
+  position: relative;
+  left: 20%;
+}
+
+.checkoutcardform {
+  border-style:double;
+  border-width: 10px;
+  border-radius: 90px;
+  border-color:#7C8C68;
+    label {
+      font-size: 20px;
+    }
+}
+
+/* Complete Purchase */
+
+#thankyoucurve {
+  position: absolute;
+  scale: 1.05;
+  top: 20%;
+  left: 4%;
+}
+
+.purchaseditems {
+  background-color: #D9B382;
+  border-style: double;
+  border-color:#7C8C68;
+  border-width: 10px;
+  margin: 20% 10% 10% 10%;
+  border-radius: 150px 150px 0px 0px;
+  color:#1f1a1a;
+  padding: 100px 50px 50px 50px;
+  font-family: 'OrelegaOne';
+}
+
+.purchaseditemlist {
+  color:#1f1a1a;
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+    img {
+      scale: 0.5;
+    }
+}
+
+#completeBackHome {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+   button {
+    background-color: #7C8C68;
+   }
 }
 
 }
