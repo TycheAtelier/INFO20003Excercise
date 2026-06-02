@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page - Adhesive</title>
         <link rel="stylesheet" href="file.css">
-    <script src="file.js"></script>
+    <script async src="file.js"></script>
 
 </head>
 <body>
@@ -14,10 +14,10 @@
         <ul> 
             <li> <a href="homepage.html"> <img src="Home.svg"> </a> </li> 
             <li> <a href="productsearch.html"> <img src="Search.svg"> </a> </li>
-           <li> <img src="BookBindLogo.png" alt="Logo" class="Logo"> </li>
-            <li> <a href="productcatalog.html"> <img src="Catalog.svg"> </a></li>   
+           <li> <img src="image/BookBindLogo.png" alt="Logo" class="Logo"> </li>
+            <li> <a href="productcatalog.html"> <img src="image/catalogOpen.svg"> </a></li>   
           <!--  <li> <a href="https://bookbindingaustralia.com.au/news/"> <img src="news.svg"> </a> </li> -->
-           <li> <a href="shoppingcart.html"> <img src="Cart.svg"> </a> </li>
+           <li> <div class="desktopAddCart"> <img src="Cart.svg"> <span class="cart-item-quantity"> 0 </span> </li>
 
 </ul>    
 </nav>
@@ -26,8 +26,8 @@
   <a class="linktoPages" href="homepage.html"> <img src="Home.svg"> </a>
   <a class="linktoPages" href="productsearch.html"> <img src="Search.svg"> </a>
  <img src="image/BookBindLogo.png" alt="Logo" class="Logo"> 
-  <a class="linktoPages" href="productcatalog.html"> <img src="Catalog.svg"></a>
-  <a class="linktoPages" href="shoppingcart.html"> <img src="Cart.svg"></a>
+  <a class="linktoPages" href="productcatalog.html"> <img src="image/catalogOpen.svg"></a>
+  <div class="linktoPages addCart" > <img src="Cart.svg"> <span class="cart-item-quantity"> 0 </span> 
 </nav>
 
 <section class="productinfo">
@@ -59,40 +59,51 @@
     </section>
 
 
-   <h2 id="recommended"> Recommended </h2>
- <section class="horizontal">
+   <section id="recommended"> 
+            <h2> RECOMMENDED </h2>
+
+            <section class="horizontal">
             <a href="productpage.html" class="linktoproductpage">
               <article class= "productlisting">
                   <img src="image/adhesiveproduct1.png" alt="Adhesive" style="width:80%"> 
-                    <h1> Adhesive Glue </h1>
+                    <h1 class="product-title"> Acid Neutral Adhesive </h1>
                      <p class="price">$10.00 </p>
                      <p><button>Add to Cart</button></p>
               </article>
                 </a>
 
-            <a href="productpage.html" class="linktoproductpage">
+              <a href="productpage.html" class="linktoproductpage">
               <article class= "productlisting">
-                  <img src="image/adhesiveproduct1.png" alt="Adhesive" style="width:80%"> 
-                    <h1> Adhesive Glue </h1>
-                     <p class="price">$10.00 </p>
-                     <p><button>Add to Cart</button></p>
-              </article>
-                </a>
-
-                 <a href="productpage.html" class="linktoproductpage">
-              <article class= "productlisting">
-                  <img src="image/adhesiveproduct1.png" alt="Adhesive" style="width:80%"> 
-                    <h1> Adhesive Glue </h1>
-                     <p class="price">$10.00 </p>
+                  <img src="image/cardpaper1.png" alt="Archival Card" style="width:80%"> 
+                    <h1 class="product-title"> Archival Grey Card </h1>
+                     <p class="price">$12.00 </p>
                      <p><button>Add to Cart</button></p>
               </article>
                 </a>
 
                 <a href="productpage.html" class="linktoproductpage">
               <article class= "productlisting">
-                  <img src="image/adhesiveproduct1.png" alt="Adhesive" style="width:80%"> 
-                    <h1> Adhesive Glue </h1>
-                     <p class="price">$10.00 </p>
+                  <img src="image/goldleaf.png" alt="goldleaf" style="width:80%"> 
+                    <h1 class="product-title"> Gold Leaf </h1>
+                     <p class="price">$135.00 </p>
+                     <p><button>Add to Cart</button></p>
+              </article>
+                </a>
+
+              <a href="productpage.html" class="linktoproductpage">
+              <article class= "productlisting">
+                  <img src="image/thread1.png" alt="Adhesive" style="width:80%"> 
+                    <h1 class="product-title"> Coats Sewing Thread  </h1>
+                     <p class="price">$35.00 </p>
+                     <p><button>Add to Cart</button></p>
+              </article>
+                </a>
+
+                <a href="productpage.html" class="linktoproductpage">
+              <article class= "productlisting">
+                  <img src="image/cottontape1.png" alt="Adhesive" style="width:80%"> 
+                    <h1 class="product-title"> Cotton Tape </h1>
+                     <p class="price">$1.50 </p>
                      <p><button>Add to Cart</button></p>
               </article>
                 </a>

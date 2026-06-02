@@ -19,7 +19,7 @@ a {
   text-decoration: none;
 }
 
-nav.carticon {
+nav.desktopAddCart {
   display:flex;
 }
 
@@ -44,7 +44,11 @@ main {
 @media screen and (max-width:1440px) {
   /* Homepage Display */ 
 
-
+span.cart-item-quantity {
+  position: absolute;
+  top: 10%;
+  right: 8%;
+}
 .banner {
   position:relative;
   text-align: center;
@@ -177,6 +181,7 @@ ul li a:hover {
 
 /* Product Catalog Page -> Product Listings */
 
+
 .productlisting {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 200px;
@@ -191,14 +196,20 @@ ul li a:hover {
   border-radius: 25px;      /* Border-Radius for rounded corners. */  
   margin-top:5%;
     h1{
-      font-size:120%;
+      font-size:110%;
+      height: 3rem;
     }
     p {
       font-size:80%;
     }
     img {
       border-radius: 20%;
+      height: 6rem;
     }
+}
+
+.productlisting img:hover {
+  scale: 1.1;
 }
 
 .catalogButtons {
@@ -252,6 +263,7 @@ article.news {
   padding:2%;
   border-radius: 50px;
   text-align: center;
+
 }
 
 p.news {
@@ -260,6 +272,7 @@ p.news {
   background-color: #ECE2D7;
   text-align: center;
   margin-top:0%;
+  border-radius: 50px;
 }
 
 /* Product Catalog Title Card */
@@ -336,6 +349,10 @@ footer {
 }
 
 /* Product Page */ 
+
+.mobileProductInfo {
+  display: none;
+}
 
 .productinfo {
   margin: 5%;
@@ -451,11 +468,13 @@ footer {
   line-height: 2rem;
 }
 
+/*
 .carticon {
    position: relative;
 }
+*/
 
-#purchasequantity {
+.cart-item-quantity {
   background-color: #501313;
   padding: 5px 10px 5px 10px;
   border-radius: 50px;
@@ -470,7 +489,7 @@ footer {
 }
 
 /* requires adjustment in final design for cleanness. remove underline on hover*/
-#purchasequantity:hover {
+.cart-item-quantity:hover {
   text-decoration:none;
 }
 
@@ -577,6 +596,9 @@ border-bottom-style: double;
     width: 100%;
     border-radius: -50px;
     overflow:auto;
+    position: sticky;
+    z-index:100;
+    top: 0;
   }
 
   /* Using px as measurement for border radius makes it more rounded and circular instead of elliptical*/
@@ -610,6 +632,18 @@ border-bottom-style: double;
     background-color:#525e42;
   }
 
+  .mobilenavigation div {
+    margin-top: 0;
+    padding-top: 12px;
+      img {
+        position: relative;
+      }
+  }
+
+  .mobilenavigation .cart-item-quantity {
+    top:60%;
+  }
+
   /* Horizontal Scroll - How to Overflow?? fail */ 
   .horizontal {
     max-width: 100%;
@@ -636,6 +670,7 @@ border-bottom-style: double;
   }
 
   .mobileProductInfo {
+    display:block;
     background-color: #501313;
     margin: 5%;
     margin-top: 10%;
@@ -673,10 +708,37 @@ border-bottom-style: double;
   }
 
   /* Product Listing */ 
+
+  .catalogDisplay {
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    padding: 0;
+  }
+
   .listProduct {
  transform: scale(0.8);
  align-content: start;
  margin: 0;
+}
+
+.listProduct img {
+  height: 20rem;
+}
+
+.productlisting {
+  width: 8rem;
+}
+
+.listProduct {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.listProduct .item {
+  width: 80%;
 }
 
 .catalogDisplay {
@@ -689,11 +751,11 @@ search.search {
 }
 
 /* Shopping Cart */
-#purchasequantity {
+.cart-item-quantity {
   text-decoration: none;
   color:#ECE2D7;
   right: 0px;
-  top: 65%;
+  top: 10%;
   height: 15px;
 }
 
@@ -769,9 +831,15 @@ search.search {
 
 /* Product Listing Page */
 
+.listProduct {
+  height: 25rem;
+  width: 15rem;
+}
+
 .listProduct .item img {
   width:100%;
-  filter:drop-shadow(10px 10px 5px #1f1a1a)
+  filter:drop-shadow(10px 10px 5px #1f1a1a);
+  max-height: 15rem;
 }
 
 .listProduct h2 {
@@ -791,11 +859,12 @@ search.search {
 
 .listProduct .item {
   background-color: #7C8C68;
+  height: 23rem;
+  width: 10rem;
   padding: 2rem 4rem 2rem 4rem;
   border-radius:20%;
   margin: 1rem;
   text-align:center;
-  line-height: 0.5rem;
   transform: scale(0.8)
 }
 
@@ -815,6 +884,7 @@ search.search {
   inset: 0 -400px 0 auto;
   display:grid;
   grid-template-rows: 70px 1fr 70px;
+  z-index: 110;
 }
 
 
@@ -853,7 +923,7 @@ body.showCart .cartTab {
 
 .cartTab .listCart .item {
   display: grid;
-  grid-template-columns: 70px 150px 50px 1fr;
+  grid-template-columns: 70px 120px 50px 1fr;
   gap:10px;
   text-align: center;
   align-items: center;
@@ -862,6 +932,14 @@ body.showCart .cartTab {
 
 .cartTab .listCart .item .name {
   letter-spacing: 3px;
+}
+
+.listCart .item .cart-remove {
+  margin-left: 150%;
+  padding-left: 50px; 
+  padding-right: 100px;
+  color:#1f1a1a;
+  background-color: #D9B382;
 }
 
 .listCart .quantity span {
@@ -882,6 +960,11 @@ body.showCart .cartTab {
   background-color:#822c21;
 }
 
+#plus, #minus {
+  background-color: #525e42;
+  padding: 5px;
+}
+
 .listCart{
   overflow: auto;
 }
@@ -889,3 +972,17 @@ body.showCart .cartTab {
 .listCart::-webkit-scrollbar{
   width:0;
 }
+
+article.cartTotal {
+  padding-left: 5%;
+}
+
+div.total-title {
+  font-family: 'OrelegaOne';
+  font-size: 2rem;
+}
+
+.desktopAddCart div:hover {
+  background-color: #501313;
+}
+
