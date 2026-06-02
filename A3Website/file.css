@@ -36,7 +36,7 @@ main {
 
 .catalogDisplay {
   display: grid; 
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 /* Desktop Screen */
@@ -337,16 +337,12 @@ footer {
     }
 }
 
-#searchbar {
-  margin-left:5%;
+.search {
+  margin: 3%;
+  display: flex; 
+  justify-content: center;
 }
 
-/* Search */
-
-#searchbar {
-  margin-top: 3%;
-  align-items: center;
-}
 
 /* Product Page */ 
 
@@ -726,6 +722,7 @@ border-bottom-style: double;
   height: 20rem;
 }
 
+
 .productlisting {
   width: 8rem;
 }
@@ -827,7 +824,7 @@ search.search {
    }
 }
 
-}
+} /* end mobile */
 
 /* Product Listing Page */
 
@@ -840,6 +837,7 @@ search.search {
   width:100%;
   filter:drop-shadow(10px 10px 5px #1f1a1a);
   max-height: 15rem;
+  min-height: 15rem;
 }
 
 .listProduct h2 {
@@ -863,7 +861,6 @@ search.search {
   width: 10rem;
   padding: 2rem 4rem 2rem 4rem;
   border-radius:20%;
-  margin: 1rem;
   text-align:center;
   transform: scale(0.8)
 }
