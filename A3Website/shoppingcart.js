@@ -147,3 +147,14 @@ buyNowButton.addEventListener("click", () => {
 
     window.location.href = "completepurchase.html";
 })
+
+// Filtering Catalog Search 
+
+function filterCatalogMaterials() {
+  const materialsFilter = document.querySelectorAll("bookbindingmaterials");
+
+ materialsFilter.forEach((element) => {
+    element.classList.toggle("hidden");
+ });
+}
+

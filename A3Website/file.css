@@ -36,7 +36,7 @@ main {
 
 .catalogDisplay {
   display: grid; 
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 
 /* Desktop Screen */
@@ -838,6 +838,7 @@ search.search {
   filter:drop-shadow(10px 10px 5px #1f1a1a);
   max-height: 15rem;
   min-height: 15rem;
+  object-fit: contain;
 }
 
 .listProduct h2 {
@@ -983,3 +984,8 @@ div.total-title {
   background-color: #501313;
 }
 
+
+/* Catalog Filter */ 
+.bookbindingmaterials {
+  display:none;
+}
