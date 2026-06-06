@@ -27,6 +27,13 @@ main {
   min-height: 115vw;
 }
 
+#booklogo {
+  margin-top: 5%;
+}
+
+.navigation a {
+  color:#edddcd;
+}
 
 @media screen and (min-width:391px) {
   .mobilenavigation {
