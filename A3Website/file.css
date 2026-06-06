@@ -99,6 +99,52 @@ span.cart-item-quantity {
   grid-template-columns: repeat(5, 1fr);
   gap: 5px;
 }
+
+/* Check Out */
+
+.checkoutgridlayout {
+  gap: 30%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  justify-content: flex-start; 
+  align-items:center;
+    article.news {
+     margin-bottom: 10%;
+     align-self: flex-end;
+    }
+}
+
+#checkoutcard #checkoutinfo {
+  width: 50%;
+}
+
+/* Thank You Page */
+
+.mobilecompletepage {
+  display:none;
+}
+
+.desktopcompletepage {
+  background-color: #501313;
+  opacity: 90%;
+  margin: 5%;
+  padding: 5%;
+  color:#ECE2D7;
+  border-radius: 100px;
+  border-style: double;
+  border-width: 1rem;
+    button {
+      margin-top: 5%;
+      background-color: #7C8C68;
+    }
+}
+
+ #recommended img {
+  object-fit: contain;
+}
+
+
 }
 
 
@@ -550,6 +596,11 @@ display:flex;
   border-color:#7C8C68;
 }
  
+.mobilecompletepage {
+  display:block;
+  margin-bottom: 50%;
+}
+
 .banner img {
   height: 40em;
   width: 100%;
@@ -615,6 +666,10 @@ border-bottom-style: double;
     margin-top: 3rem;
   }
 
+.mobilenavigation {
+  width: 100vw;
+}
+
   .mobilenavigation a {
     float: left;
     text-align: center;
@@ -638,6 +693,19 @@ border-bottom-style: double;
 
   .mobilenavigation .cart-item-quantity {
     top:60%;
+  }
+
+  /* Check Out Page Mobile */
+
+  .checkoutgridlayout {
+    display: flex; 
+    flex-direction: column;
+    width:100%;
+    margin:0;
+  }
+
+  .desktopcompletepage {
+    display: none;
   }
 
   /* Horizontal Scroll - How to Overflow?? fail */ 
@@ -985,7 +1053,7 @@ div.total-title {
 }
 
 
-/* Catalog Filter */ 
-.bookbindingmaterials {
-  display:none;
+.filter-button:focus {
+  background-color: #525e42;
 }
+

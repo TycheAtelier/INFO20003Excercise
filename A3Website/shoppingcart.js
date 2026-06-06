@@ -145,16 +145,43 @@ buyNowButton.addEventListener("click", () => {
 
     updateTotalPrice;
 
-    window.location.href = "completepurchase.html";
+    window.location.href = "checkout.html";
 })
 
 // Filtering Catalog Search 
 
 function filterCatalogMaterials() {
-  const materialsFilter = document.querySelectorAll("bookbindingmaterials");
+  const materialsFilter = document.querySelectorAll(".bookbindingmaterials");
 
  materialsFilter.forEach((element) => {
-    element.classList.toggle("hidden");
+   if (element.style.display === "none") {
+    element.style.display = "block";
+   } else {
+    element.style.display = "none";
+   }
  });
 }
 
+function filterCatalogTools() {
+  const toolsFilter = document.querySelectorAll(".tools");
+
+ toolsFilter.forEach((element) => {
+   if (element.style.display === "none") {
+    element.style.display = "block";
+   } else {
+    element.style.display = "none";
+   }
+ });
+}
+
+function filterCatalogKits() {
+  const kitsFilter = document.querySelectorAll(".bookbindkit");
+
+kitsFilter.forEach((element) => {
+   if (element.style.display === "none") {
+    element.style.display = "block";
+   } else {
+    element.style.display = "none";
+   }
+ });
+}

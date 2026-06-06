@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complete Purchase</title>
-     <link rel="stylesheet" href="file.css">
-      <script async src="file.js"></script>
+    <title>Product Page - Adhesive</title>
+        <link rel="stylesheet" href="file.css">
+    <script async src="file.js"></script>
+
 </head>
 <body>
     
@@ -14,7 +15,7 @@
             <li> <a href="homepage.html"> <img src="Home.svg"> </a> </li> 
             <li> <a href="productsearch.html"> <img src="Search.svg"> </a> </li>
            <li> <img src="image/BookBindLogo.png" alt="Logo" class="Logo"> </li>
-            <li> <a href="productcatalog.html"> <img src="image/catalogOpen.svg"> </a></li>   
+            <li> <a href="productcatalog.html"> <img src="Catalog.svg"> </a></li>   
           <!--  <li> <a href="https://bookbindingaustralia.com.au/news/"> <img src="news.svg"> </a> </li> -->
            <li> <div class="desktopAddCart"> <img src="Cart.svg"> <span class="cart-item-quantity"> 0 </span> </li>
 
@@ -29,12 +30,38 @@
   <div class="linktoPages addCart" > <img src="Cart.svg"> <span class="cart-item-quantity"> 0 </span> 
 </nav>
 
-<div class="desktopcompletepage">
-  <h1> THANK YOU FOR YOUR PURCHASE </h1>
+<section class="productinfo">
+    <img src="image/adhesiveproduct2.png" alt="product" width="40%" id="glue">
+    <article class="productdescription"> 
+        <h3> Pearl Animal Glue </h3>
+        <h4> $16.00</h4>
+        <p> Tip: If you get glue on the cloth you are working with, let it dry then use a crepe eraser and rub from the outside of the mark to the middle to remove it. </p>
+        <p> Tip: To slow down the drying time of the glue, add a small quantity of pre-made methyl cellulose solution.</p>
 
-  <p> Want More Items? </p>
+        <button> ADD TO CART </button>
+    </article>    
+</section>
 
-   <section id="recommended">     
+    <section class="mobileProductInfo">
+      <article class="mobileItemInfo">
+      <div class="itemTitle">
+        <h3> Pearl Animal Glue </h3>
+      <h4> $16.00</h4>
+      </div>
+      <img src="image/adhesiveproduct2.png"> 
+      </article>
+      <article class="mobileItemDescription"> 
+        <p> Tip: If you get glue on the cloth you are working with, let it dry then use a crepe eraser and rub from the outside of the mark to the middle to remove it. </p>
+        <p> Tip: To slow down the drying time of the glue, add a small quantity of pre-made methyl cellulose solution.</p>
+        <button class="addCart"> ADD TO CART</button>
+      </article>
+
+    </section>
+
+
+   <section id="recommended"> 
+            <h2> RECOMMENDED </h2>
+
             <section class="horizontal">
             <a href="productpage.html" class="linktoproductpage">
               <article class= "productlisting">
@@ -82,27 +109,35 @@
                 </a>
 
                 </section>
-<br>
-                <a href="homepage.html" id="completeBackHome"> <button> BACK TO HOME </button></a>
-</div>
 
-<div class="mobilecompletepage">
-<section class="purchaseditems"> 
-    <p> You bought...</p>
-
+                <section class="cartTab">
+    <h1> Shopping Cart </h1>
     <article class="listCart">
 
+      <!--
+       <div class="item">
+                <img src="image/adhesiveproduct1.png" class="image">
+                <p class="name"> ADHESIVE </p>
+                <span class="totalPrice"> $16.00</span>
+                <div class="quantity">
+                    <button class="minus"> - </button> 
+                    <span> 1 </span> 
+                    <button class="plus"> + </button> 
+                </div>
+            </div>
+            -->
     </article>
 <article class="cartTotal"> 
   <div class="total-title"> Total </div>
 <div class="total-price"> $0 </div>
 </article>
+
+    <div class="btn">
+            <button class="close"> CLOSE </button>
+            <button class="checkOut"> CHECK OUT </button>
+        </div>
 </section>
 
-<img src="image/thankyoupurchasesign.png" id="thankyoucurve"> 
-
-<a href="homepage.html" id="completeBackHome"> <button> BACK TO HOME </button></a>
-</div>
 
 <footer> 
      <h3> Additional Contact </h3>
@@ -113,6 +148,5 @@
     </br> Policy 
     </br> Careers</p>
  </footer>
- 
 </body>
 </html>
